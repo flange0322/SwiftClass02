@@ -15,53 +15,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XcodeProject02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B8-G1-S2J">
-                                <rect key="frame" x="256.66666666666669" y="259" width="383.00000000000006" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Button-Test4"/>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7u6-kb-zzT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF0-rZ-aGm">
-                                <rect key="frame" x="257" y="59" width="382" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Button-Test2"/>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDc-aI-eBQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-h7-IVF">
-                                <rect key="frame" x="261.66666666666669" y="-41" width="373.00000000000006" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Button-Test1"/>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pl6-4G-rE4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-4A-hH8">
-                                <rect key="frame" x="256.66666666666669" y="159" width="383.00000000000006" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Button-Test3"/>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="InH-3T-Kje"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World to click" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yub-0X-iLW">
+                                <rect key="frame" x="250.66666666666663" y="825.66666666666663" width="147.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20167029920000001" green="0.22604802069999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="4Tw-rE-BAi">
+                                <rect key="frame" x="10" y="78" width="394" height="698"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-h7-IVF">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="136"/>
+                                        <state key="normal" title="Susan" image="user1"/>
+                                        <connections>
+                                            <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pl6-4G-rE4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF0-rZ-aGm">
+                                        <rect key="frame" x="0.0" y="187" width="394" height="134"/>
+                                        <state key="normal" title="Kevin" image="user2"/>
+                                        <connections>
+                                            <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDc-aI-eBQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-4A-hH8">
+                                        <rect key="frame" x="0.0" y="372" width="394" height="139"/>
+                                        <state key="normal" title="Wayne" image="user3"/>
+                                        <connections>
+                                            <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="InH-3T-Kje"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B8-G1-S2J">
+                                        <rect key="frame" x="0.0" y="562" width="394" height="136"/>
+                                        <state key="normal" title="Cynthia" image="user1"/>
+                                        <connections>
+                                            <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7u6-kb-zzT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tvl-h7-IVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0iK-0x-nH1"/>
-                            <constraint firstItem="3B8-G1-S2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24h-xf-F9S"/>
-                            <constraint firstItem="3B8-G1-S2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="Fwy-ty-2SL"/>
-                            <constraint firstItem="E9h-4A-hH8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vo3-3m-pc7"/>
-                            <constraint firstItem="3B8-G1-S2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XzI-n3-DH8"/>
-                            <constraint firstItem="E9h-4A-hH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="orx-8I-gUj"/>
-                            <constraint firstItem="kF0-rZ-aGm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="x0z-th-r6u"/>
-                            <constraint firstItem="tvl-h7-IVF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="y22-Sq-P3F"/>
-                            <constraint firstItem="kF0-rZ-aGm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zoA-dY-EM5"/>
+                            <constraint firstItem="Yub-0X-iLW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="11T-Ij-2bp"/>
+                            <constraint firstItem="4Tw-rE-BAi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JHX-6h-cBY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yub-0X-iLW" secondAttribute="trailing" constant="16" id="N84-zT-CKU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3B8-G1-S2J" secondAttribute="bottom" constant="86" id="ScE-Mw-U3O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Tw-rE-BAi" secondAttribute="trailing" constant="10" id="TdD-sf-FiO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yub-0X-iLW" secondAttribute="bottom" constant="16" id="icM-x3-tk7"/>
+                            <constraint firstItem="4Tw-rE-BAi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="kgd-x3-LvP"/>
+                            <constraint firstItem="tvl-h7-IVF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="m8b-c2-vac"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -71,4 +77,9 @@
             <point key="canvasLocation" x="69.565217391304358" y="32.8125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user1" width="100" height="136"/>
+        <image name="user2" width="100" height="134"/>
+        <image name="user3" width="100" height="139"/>
+    </resources>
 </document>

@@ -19,7 +19,16 @@ class ViewController: UIViewController {
     
     @IBAction func showMessage(sender: UIButton){
         
-        let dictionary = ["Button-Test1": "Hello","Button-Test2": "World","Button-Test3": "to","Button-Test4": "you"]
+        let person_Name = ["Susan","Kevin","Wayne","Cynthia"]
+        let person_Talk = ["Nice to meet you!","Hi,How are you?","HaHa,It's a good day. Right?","Have a good day."]
+        
+        var dictionary : Dictionary<String,String> = [:]
+        for i in 0...3{
+           dictionary.updateValue(person_Talk[Int.random(in: 0...3)], forKey: person_Name[i])
+        }
+        
+        print(dictionary)
+        
         let selectedButton = sender
         
         if let wordToLookup = selectedButton.titleLabel?.text{
